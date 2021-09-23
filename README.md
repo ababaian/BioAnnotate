@@ -65,3 +65,10 @@ Kat would like to annotate Chunk `C` for `geo` data.
 `ecosystem` :
 
 `bodysite` :
+
+
+# Building Knowledge
+
+![Earth's Sequencing](00_planetary_sequencing.png)
+
+An example of the use-case for this data, this shows the distribution of several million "Deep Sequencing" datasets in the Sequence Read Archive. Geographic data was extracted from BioSample, but more than 50% of the data is missing due to inconsitent naming.
