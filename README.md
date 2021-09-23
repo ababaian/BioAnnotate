@@ -18,7 +18,7 @@ There are `42,125` unique 'tags' across >10.7 million BioSample XML files. We wi
 
 # Contributing
 
-We will work on a collaborative ![Annotation Spreadsheet](https://docs.google.com/spreadsheets/d/1J-kYYDBv3K5HFYMiHhSseEcpW8TQ3ilbSxfynXNtzKo/edit?usp=sharing) which contains every unique BioSample tag.
+We will work on a collaborative [Annotation Spreadsheet](https://docs.google.com/spreadsheets/d/1J-kYYDBv3K5HFYMiHhSseEcpW8TQ3ilbSxfynXNtzKo/edit?usp=sharing) which contains every unique BioSample tag.
 
 Sign-up on the `Lockout` sheet to annotate a 'chunk' of 2,500 rows in the `biosample_tags` sheet for a particular class of data (see below).
 
