@@ -24,7 +24,7 @@ Sign-up on the `Lockout` sheet to annotate a 'chunk' of 2,500 rows in the `biosa
 
 The default for all tags is set to `F` for "FALSE". If a `biosample_tag` describes a field which is pertinent to your data-class, change this value to `T` for "TRUE".
 
-If you are unsure of how to classify a particular `biosample_tag`, set the value to `?`
+If you are unsure of how to classify a particular `biosample_tag`, set the value to `?` and/or ask in the chat.
 
 ### Example Workflow
 
@@ -44,31 +44,45 @@ Kat would like to annotate Chunk `C` for `geo` data.
 
 ### `geo` data
 
-`geo_name` :
+**Inclusion**: Tags which can provide any location data. Imagine the keywords you could type into Google Maps. e.g. `geo_location`, `country`, `national_park`, `sequencing_institute`, `lake_name`, `longitude`, `lat_long`, `geo_coordinates`...
 
-`geo_coord` :
+**Exclusion**: Tags which describe a generic environment, not geographically specific. e.g. `snow_depth`, `nitrogen_content_soil`, `lake_type`...
+
+`geo_name` : Set to `T` if tag likely contains words describing geo-data.
+
+`geo_coord` : Set to `T` if tag likely contains numbers describing geo-data, mainly longitude / latitude / altitude.
 
 ### `date` data
 
-`collection_date` :
+**Inclusion**: Tags which would contain a date. e.g. `collection_date`, `sample_date`, `sequencing_date`, `release_date`...
 
-`other_date` :
+**Exclusion**: Tags which contain time-course data, such as the timeline of an experiment. e.g. `week_of_growth`, `hours`...
+
+`collection_date` : Set to `T` if tag specifically describes the time at which a sample was collected from nature.
+
+`other_date` : Set to `T` if tag contains a date.
 
 ### `organism` data
 
-`host_species` :
+**Inclusion**: Tags which can provide taxonomic information regarding the organism which had been sampled. e.g. `species`, `genus`, `scientific_order`, `taxonomy_string`
 
-`virus_species` :
+**Exclusion**: Tags which describe a generic component of an organism. e.g. `leaf_type`, `fur_colour`, `paw_length`...
+
+`host_species` : Default choice to set to `T` for this class
+
+`virus_species` : Set to `T` if tag specifically indicates a viral organism classification.
 
 ### `ecosystem` data
 
-`ecosystem` :
+**Inclusion**: Tags which can provide an environmental or organism-tissue description of the samples origin. e.g. `water_depth`, `wastewater_site`, `soil_moisture`, `brain_region`, `tumour_diameter`, `organ_site`... 
 
-`bodysite` :
+`ecosystem` : Set to `T` if tag describe the samples environment.
+
+`bodysite` : Set to `T` if tag describes an organism's site.
 
 
 # Building Knowledge
 
 ![Earth's Sequencing](00_planetary_sequencing.png)
 
-An example of the use-case for this data, this shows the distribution of several million "Deep Sequencing" datasets in the Sequence Read Archive. Geographic data was extracted from BioSample, but more than 50% of the data is missing due to inconsitent naming.
+An example use-case for this data showing the spatial-distribution of several million DNA or RNA sequencing datasets in the 'Sequence Read Archive'. Geographic data was extracted from BioSample, but >50% of the data is missing due to inconsitent naming, we're going to fix that!
