@@ -38,7 +38,7 @@ Kat would like to annotate Chunk `C` for `geo` data.
 
 3. On the `biosample_tags` sheet Chunk corresponds to Rows `5001 - 7500` and the `geo_name` and `geo_coord` columns.
 
-4. After turning on some good jams, she annotates these rows.
+4. After turning on some [good jams](https://www.youtube.com/watch?v=iuWa5wh8lG0), she annotates these rows.
 
 5. Upon completing her annotation, she updates `Lockout` to indicate this chunk is complete and she can begin working on another Chunk.
 
