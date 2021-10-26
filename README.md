@@ -88,3 +88,7 @@ Kat would like to annotate Chunk `C` for `geo` data.
 ![Earth's Sequencing](00_planetary_sequencing.png)
 
 An example use-case for this data showing the spatial-distribution of several million DNA or RNA sequencing datasets in the 'Sequence Read Archive'. Geographic data was extracted from BioSample, but >50% of the data is missing due to inconsitent naming, we're going to fix that!
+
+# Contributors
+
+[@ababaian](https://github.com/ababaian) [@linzzasaurus](https://github.com/linzzasaurus) [@mamurak](https://github.com/mamurak) [@rgodinezp](https://github.com/rgodinezp)
