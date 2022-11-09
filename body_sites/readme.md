@@ -12,16 +12,17 @@ BioSample XML data was downloaded from NCBI and the 80 GB file was split using [
 
 From the XML files, values were pulled for attributes that matched the tags on the lookup list. Values were filtered to remove integers and some special characters were removed/replaced for consistency with the original BioAnnotate spreadsheet.
 
-To check how promiscuous the Level 1 terms are when conducting a search, the Level 1 terms were cross-referenced against the list of unique values and the frequency for each term was calculated, which can be viewed in [this spreadsheet] (Google docs link) in teh `frequency` sheet. Values that are informative will later be classified as Level 2 terms.
+To check how promiscuous the Level 1 terms are when conducting a search, the Level 1 terms were cross-referenced against the list of unique values and the frequency for each term was calculated, which can be viewed in [this spreadsheet] (Google docs link) in the `frequency` sheet. Values that are informative will later be classified as Level 2 terms.
 
 ## Extending the matrix
 
-All BTO terms were pulled from the downloadable ontology .owl file.
+All BTO terms were pulled from the downloadable .owl file. Umbrella terms such as "has_exact_synonym" and those relating to culture conditions or language were omitted.
 
-Umbrella terms such as "has_exact_synonym" and those relating to culture conditions or language were omitted. BTO terms were added to the matrix of Level 1 terms (rows 251 and onward) and currently need to be annotated accordning to the existing ontology categories *i.e.* columns.
+BTO terms were added to the matrix of Level 1 terms (rows 251 and onward) and currently need to be annotated according to the existing ontology categories *i.e.* columns.
 
 ### Tips for annotating:
 
-- As the focus of this annotation layer is human organ systems, some tissue types have been annotated with more specificity than others, and plants and fungi have only a few categories. For each Level 1 term, annotate according to the most specific ontology category possible. *E.g.* “blood” marked `T` for blood; “hippocampus” is marked `T` for forebrain.
+- As the focus of this annotation layer is human organ systems, some tissue types have been annotated with more specificity than others. For each Level 1 term, annotate according to the most specific ontology category possible. *E.g.* “blood” marked `T` for blood; “hippocampus” is marked `T` for forebrain.
 - There are 6000+ BTO terms, so it is easiest to start at the top of one tree in the ontology viewer and systematically work downwards through each node, `Crtl+F` to find each term in the matrix (note: Dashes and spaces have been replaced by underscores in the matrix).
+  - For the nodes in animal > whole body: body wall, cardiovascular system, connective tissue, and embryonic structure are **done**.
 - Some terms will fall under multiple categories. *E.g.* “uterine_endometrial_stromal_cell” is marked `T` for categories connective_tissue and uterus; “breast_cancer_cell” marked `T` for categories cancer and breast.
