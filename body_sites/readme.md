@@ -2,7 +2,7 @@
 
 Part of the meta data contained in BioSample XML data are attributes (“tags”) and corresponding text (“values”).
 
-From the [BioAnnotate spreadsheet](https://docs.google.com/spreadsheets/d/1J-kYYDBv3K5HFYMiHhSseEcpW8TQ3ilbSxfynXNtzKo/), a [body_site_matrix] (rows 2-250) was created with biosample_tags that were `T` for the `body_site` data class.
+From the [BioAnnotate spreadsheet](https://docs.google.com/spreadsheets/d/1J-kYYDBv3K5HFYMiHhSseEcpW8TQ3ilbSxfynXNtzKo/), a [body_site_matrix] (rows 2-250 on the `matrix` sheet) was created with biosample_tags that were `T` for the `body_site` data class.
 
 The annotation system, displayed on the `BRENDA` sheet, was based on the [BRENDA Tissue Ontology (BTO)](https://www.ebi.ac.uk/ols/ontologies/bto) which was chosen for its hierarchal system that groups terms into organ systems, anatomical structures, tissue and cell types, and derived cell lines. The ontology originated from the BRaunschweig ENzyme Database and helpfully encapsulates animals, fungi, and plants.
 
@@ -23,6 +23,8 @@ BTO terms were added to the matrix of Level 1 terms (rows 251 and onward) and cu
 ### Tips for annotating:
 
 - As the focus of this annotation layer is human organ systems, some tissue types have been annotated with more specificity than others. For each Level 1 term, annotate according to the most specific ontology category possible. *E.g.* “blood” marked `T` for **blood**; “hippocampus” is marked `T` for **forebrain**.
-- There are 6000+ BTO terms, so it is easiest to start at the top of one tree in the ontology viewer and systematically work downwards through each node, `Crtl+F` to find each term in the matrix (note: Dashes and spaces have been replaced by underscores in the matrix).
-  - For the nodes in animal > whole body: body wall, cardiovascular system, connective tissue, and embryonic structure are DONE.
 - Some terms will fall under multiple categories. *E.g.* “uterine_endometrial_stromal_cell” is marked `T` for categories **connective_tissue** and **uterus**; “breast_cancer_cell” marked `T` for categories **cancer** and **breast**.
+- There are 6000+ BTO terms, so it is easiest to start at the top of one tree in the ontology viewer and systematically work downwards through each node, `Crtl+F` to find each term in the `matrix`. Notes:
+  - Dashes and spaces have been replaced by underscores in the matrix.
+  - The sheet `nodes_complete` is a list of trees that are already annotated.
+
